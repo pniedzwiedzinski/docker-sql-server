@@ -1,0 +1,17 @@
+version: "3.5"
+services:
+  sql_server:
+    image: mcr.microsoft.com/mssql/server:2017-latest-ubuntu
+    container_name: sql_server
+    environment:
+      - ACCEPT_EULA=y
+      - SA_PASSWORD=yourStrong@Password
+      - MSSQL_PID=Express
+    networks:
+      - sql_server
+    ports:
+      - 1433:1433
+
+networks:
+  sql_server:
+    name: "sql_server"
