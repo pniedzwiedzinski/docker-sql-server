@@ -1,4 +1,4 @@
-FROM python:buster
+FROM python:3.8.1-slim-buster
 
 RUN pip3 install mssql-cli
 
