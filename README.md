@@ -5,16 +5,15 @@
 Taki tam szybki config serwera + cli na dockerze
 
 - SQL Server 1.38GB
-- mssql-cli 379MB
+- Azure Data Studio
 
 ## Weź se włącz
 
-Jak już masz dockera i docker-compose to izi wystarczy to:
+Włącz dockera i `docker-compose up`
 
-``` sh
-# Zklonuj repo i:
-make shell
+Użytkownik: `sa`
+Hasło: `yourStrong@Password`
 
-# lub nawet po prostu
-make
-```
+## Azure Data Studio
+
+Trzeba łączyć plik sql z bazą danych i wtedy można go uruchomić
